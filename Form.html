@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+<style>
+        body {
+            background-color: rgb(0,0,0);
+            color: blue;
+            font: normal 16px;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style><h2>Menu</h2>
+</head>
+<body>
+	  <p>
+       <ol style="margin-top: 55px;"><li style="text-align: center; font-size: 32; font-family: times new roman;">
+    <a href="home.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">HOME</a>
+    <a href="about.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">ABOUT US</a>
+    <a href="contact.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">CONTACT</a>
+    <a href="services.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">SERVICES</a>
+    <a href="form.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">FORM</a>
+    <a href="table.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">TABLE</a>
+    <a href="mybook.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">MY BOOK
+    </a></li>
+</ol>
+    </p>
+    <marquee><h1><big>WELCOME TO GOVERNMENT REVENUE MANAGEMENT SYSTEM</h1></big></marquee>
+    <hr>
+    <h1>Form Example</h1>
+    <center>
+        <form action="#" method="POST">
+            <label for="id">ID</label>
+            <input type="number" name="id" id="id"><br><br>
+
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname"><br><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname"><br><br>
+
+             <label>Sex</label>
+            <input type="radio" name="sex" value="male" checked>Male
+            <input type="radio" name="sex" value="female">Female<br><br>
+
+            <label for="date">DOB</label>
+            <input type="date" name="date" id="date"><br><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age"><br><br>
+
+            <label for="tin">Tin number</label>
+            <input type="text" name="tin" id="tin"><br><br>
+
+             <label for="amount">Amount</label>
+            <input type="text" name="amount" id="amount"><br><br>
+
+             <label for="base yr">Base Year</label>
+            <input type="text" name="base Yr" id="base Yr"><br><br>
+
+            <label for="curr yr">Current Year</label>
+            <input type="text" name="curr yr" id="curr yr"><br><br>
+
+            <label for="dist">District</label>
+            <input type="text" name="dist" id="dist"><br><br>
+
+            <label for="rev typ">Revenue Type</label>
+            <select name="department" id="department">
+                <option value="TVA">TVA</option>
+                <option value="RENTAL TAX">RENTAL TAX</option>
+                <option value="PERSONAL TAX">PERSONAL TAX</option>
+                <option value="ANNUAL TAX">ANNUAL TAX</option>
+                <option value="LAMPSUM TAX">LAMPSUM TAX</option>
+                <option value="MONTHLY TAX">MONTHLY TAX</option>
+                <option value="FINES & PENALITY">FINES & PENALITY</option>
+                <option value="OTHERS">OTHERS</option>
+            </select><br><br>
+
+            <input type="submit" name="sbt" value="SUBMIT">
+            <input type="reset" name="cnl" value="CANCEL"><br><br>
+        </form>
+    </center>
+</body>
+</html>

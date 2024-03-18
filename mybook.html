@@ -1,0 +1,275 @@
+
+<html>
+<head>
+	<title>MY BOOK</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body bgcolor="blue sky">
+    <style>
+        body {
+            background-color: rgb(0,0,0);
+            color: blue;
+            font: normal 5px;
+            margin: 5px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 5px;
+        }
+    </style><h2>Menu</h2>
+    <p>
+<ol style="margin-top: 55px;"><li style="text-align: center; font-size: 20; font-family: times new roman;">
+    <a href="home.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">HOME</a>
+    <a href="about.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">ABOUT US</a>
+    <a href="contact.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">CONTACT</a>
+    <a href="services.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">SERVICES</a>
+    <a href="form.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">FORM</a>
+    <a href="table.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">TABLE</a>
+    <a href="mybook.html" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">MY BOOK
+    </a></li>
+</ol>
+	</p>
+	<marquee><h3><b>GOVERNMENT REVENUE MANAGEMENT SYSTEM</b></h3></marquee>
+    <h1><center>DATABASE AND JAVA WITH GOVERNMENT REVENUE MANAGEMENT SYSTEM</center></h1>
+	<ol><h2><u><li>I. DATABASE</li></u></h2>
+         
+		<p>Database name used: <b>Government Revenue Management System</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol><li><b><h1>Admin Table</h1></b></li>
+
+			<p>Admin under this government revenue system will facilitate to store admin`s data and enhance efficiency, accuracy, and compliance while reducing the risks of fraud of admin data.
+            Note: the created Admin will not have same ability and right in the system.  the admin plays a critical role in ensuring the efficient operation, security, compliance, and continuous improvement of your government revenue management system, contributing to effective revenue collection and financial management for the government entity.</p>
+            <U><b>  Admin table has the following attributes</b></U>
+            <p><b><i>Admin database table</i></b></br>
+<img src="image/admin db.png" width=500 height=100><br>
+            </p>
+       Id (primary key)...................................: Id for the admin
+      <br>first_mame (varchar)............................: Firstname for admin
+      <br>last_name (varchar)..............................: Lastname for admin
+      <br>email (varchar)......................................: Email of admin
+      <br>telephone (int).......................................: Telephone number of admin</p></br>
+
+			<li><b><h1>User Table</h1></b></li>
+
+			<p>This table represents the users of the system in payment of revenue to government. The user table typically includes the following details: user ID, First name, Last name, Email, Telephone. This is a table that will be only created by admin, the email and password of customer will be used to login in the system if no they will no longer get access to system. </p> </br>
+                        <U><b>  Admin table has the following attributes</b></U>
+            <p><b><i>User database table</i></b></br>
+<img src="image/user db.png" width=600 height=100><br>
+     <br>Id (primary key)......................................:Id for the user
+     <br>first_mame (varchar)...............................:First name for user
+     <br>last_name (varchar).................................:Last name for user
+     <br>tin_number (int)......................................:Tin number for user    
+     <br>age (int)...................................................:Age of user
+     <br>address (varchar).....................................:Address for user
+     <br>email (varchar).........................................:Email of user
+     <br>registration¬¬¬_date (date).....................:Registration_date of user
+     <br>agent_id  (foreign key)..............................:Id of agent  </br>                     
+			<li><b><h1>Manager Table</h1></b></li>
+
+			<p>the manager plays a pivotal role in ensuring the smooth operation, compliance, and optimization of your government revenue management system, contributing to efficient revenue collection and financial management for the government entity.</p></br>
+                        <U><b>  Manager table has the following attributes</b></U>
+            <p><b><i>Manager database table</i></b></br>
+<img src="image/manager db.png" width=400 height=100><br>
+<br>Id (primary key)....................................: Id for the manager                                             
+<br>first_name (varchar)..............................: First name of manager    
+<br>last_name (varchar)...............................: Last names of manager                                         
+<br>Address(varchar)...................................: Address of manager                                                      
+<br>Specialization (varchar)........................: Specialization of manager </br>                                
+<li><b><h1>Agent Table</h1></b></li>
+
+			<p> the agent in your government revenue management system plays a multifaceted role in managing data, facilitating transactions, ensuring compliance, and enhancing user experience to optimize revenue collection and financial operations.</p>
+<p> <U><b>  Agent table has the following attributes</b></U></p>
+<p><b><i>Agent database table</i></b></br>
+<img src="image/agent db.png" width=500 height=80><br>
+    <br>Id (primary key)...................................: Id for the agent
+    <br>first_mame (varchar)............................: Firstname for agent
+    <br>last_name (varchar)..............................: Lastname for agent
+    <br>email (varchar).....................................: Email for agent
+    <br>telephone (int)......................................: Telephone number of agent       
+    <br>adminid (foreign key)...........................: Id of admin            
+    <br>managerid (foreign key).......................: Id of manager</br></p>
+
+            <li><b><h1>Transaction Table</h1></b></li>
+
+			<p> transactions play a crucial role in facilitating secure, efficient, and transparent financial interactions within your government revenue management system, contributing to revenue collection, financial accountability, and user satisfaction.</p>
+                       <p> <U><b>  Transaction table has the following attributes</b></U></p>
+<p><b><i>Transaction database table</i></b></br>
+<img src="image/transaction db.png" width=350 height=110><br>
+      <br>Id (primary key)......................................: Id for the transaction
+      <br>userid (foreign key)..................................: User id of user
+      <br>revenueid (foreign key)............................: Revenue id of revenue </br>                 
+            <li><b><h1>Revenue Table</h1></b></li>
+
+            <p>  The primary function of revenue within the system is to collect payments from taxpayers, businesses, and other entities for government services, taxes, fees, fines, and licenses. Revenue management within your government revenue management system website plays a vital role in ensuring effective revenue collection, financial transparency, compliance with regulations, and strategic financial planning for government entities.</p>
+            <p> <U><b>  Revenue table has the following attributes</b></U></p>
+<p><b><i>Revenue database table</i></b></br>
+<img src="image/revenue db.png" width=350 height=110><br>
+
+    <br>id (primary key)......................................: Id for the revenue
+    <br>amount (int)............................................: Amount of revenue
+    <br>revenue_type (varchar)...........................: Revenue type of revenue</br>                       
+
+    <p><b><i><u><h1> An LDM of this system entities (Tables)</h1></u></i></b></br>
+<img src="image/LDM.png" width=800 height=500><br>
+
+<p><b><i><u><h1> An ERD of this system entities (Tables)</h1></u></i></b></br>
+<img src="image/ERD.jpg" width=800 height=500><br>
+
+<P><B><U><h1>CREATION OF VIEW TO INSERT DATA INTO THE TABLES</U></B></P></h1>
+<P><b>   CREATE VIEW admin_view AS</b></P></p>
+-> SELECT * FROM admin
+<br>-> WHERE admin_id =3;
+<p><b>   CREATE VIEW agent_view AS</b></p>
+-> SELECT * FROM agent
+<br>-> WHERE agent_id =5;
+<p><b>   CREATE VIEW manager_view AS</b></p>
+-> SELECT * FROM manager
+<br>-> WHERE manager_id = 2;
+<p><b>   CREATE VIEW revenue_view AS</b></p>
+ -> SELECT * FROM revenue
+ <br>-> WHERE revenue_id =4;</P></br>
+ <img src="image/rev view.png" width=550 height=150><br>
+ <p><b>  CREATE VIEW transaction_view AS</b></p>
+-> SELECT * FROM transaction</br>
+<img src="image/trans vw.png" width=550 height=150><br>
+<p><b>   CREATE VIEW user_view AS</b></p>
+-> SELECT * FROM user</b>
+<br>-> WHERE user_id =5;</b></br>
+<img src="image/user vw.png" width=550 height=150><br>
+
+     <h1><center>DATABASE AND JAVA WITH GOVERNMENT REVENUE MANAGEMENT SYSTEM</center></h1>
+    <h2><u><li>II. JAVA</li></u></h2> 
+            <li><b><h1> II.1. Introduction</h1></b></li>
+
+<p><h2>
+In this chapter I will be describing how powerful general purpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system.
+</h2></p></br>
+
+            <li><b><h1>II.2.Tools used to develop this system in java programming</h1></b></li>
+
+            <p><b><u>    Eclipse IDE : </b></u>
+An integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and, until 2016, was the most popular. </p> </br>
+<p><b><U>   JAR stands for Java Archive :</b></U>
+It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components.</p></br>
+<img src="image/jre.png" width=550 height=150><br></br>
+
+
+            <li><b><u>    MySQL Connectors</u></b></li>
+<p>MySQL provides standards-based drivers for JDBC, ODBC, and Net enabling developers to build database applications in their language.</p>
+
+            <li><b><h1>II.3. Forms description</h1></b></li>
+
+           <b> So let look together how this system will function one by one from the beginning up to the end </b>
+
+            <p><b><u>1.   USER LOGIN :</u></b></br><br>
+This the first page of the system where system will choose destination depending on the function he/she possess in this government revenue management system
+</p>
+<img src="image/login.png" width=350 height=300><br>
+
+            <b>  Login Button</b>
+            <p><b><u>Login Button:</u></b> This button is dedicated for system admin to login so that he/she can do more in       the system, like adding viewing different entities of this system by doing different modification.</p></br>
+
+            <li><b>  Forgot password</b></li>
+            <p><b><u>Forgot password:</u></b> This button will facilitate the user who forgot the password this button will facilitate the user to request administrator to reset. </p></br>
+            <img src="image/frgt.png" width=350 height=300><br>
+
+    <li><b> Create New Account</b></li>
+    <p><b><u>Create New Account:</u></b>  individual user can register on through the use of create new account button that will direct the user form to fill his/her information as required by the system </p></br>
+    <img src="image/snp.png" width=450 height=300><br><br>
+
+             <p><b><u>2.  ADMIN LOGIN </u></b></br>
+
+                <p><b>As we have described in above page login form will direct as on this admin login page. A designated Administrator in this system manages user access of all participant of the system including users, agent, managers oversees financial transactions, and ensures revenue management and data integrity.</p></br>
+
+                <img src="image/admn.png" width=450 height=300><br><br>
+                <b> So the after admin inserting email and password its will direct into admin dashboard</b><br>
+                 <img src="image/admnsucc.png" width=450 height=300><br><br>
+
+            <b>  Admin dashboard after login</b>
+            <p>With this page we will be show the different tasks like modifying information being inserted by different entities like user, agent who exist or not exist in the system or who do not have knowledge to use the system.</p>
+            <img src="image/dfdf.png" width=450 height=300><br>
+
+          <p><b>So for this system after admin log in his/her account in dashboard can access to different entities of the system that are described below;</p>
+                          <h1><u><i><li><center>Forms and Images</center></li></i></u></h1>
+
+<b>1.  Agent Form</b>
+<p><b>Under this page the system admin will insert, read, update and even delete an agent in this agent form in the system using generated information addition on that admin can view list of all registered employee whether those who are registered by admin.
+By incorporating agents into your government revenue management system, you can enhance efficiency, accuracy, and compliance while reducing the risks of revenue leakage and fraud. </p>
+<img src="image/dfghjdfhj.png" width=450 height=300><br>
+
+<b>2. Manager Form</b>
+<p><b>
+Under this system the manager has the responsibility of managing agents by gathering all information’s from the user of our system.
+Managers play a key role in analyzing revenue data to identify trends, patterns, and potential areas for improvement.
+</p>
+<img src="image/dfhfh.png" width=450 height=300><br>
+
+<b>3.    Revenue</b>
+<p><b>
+In this system this is the one of key entity in which user fill so as during revenue payment with this form it will facilitating the user.
+This is important part of the revenue system because it will be focusing on government revenue that flow into government but holding together that contributing in country.
+ </p>
+ <img src="image/bbbbbbb.png" width=450 height=300><br>
+
+<b>4.    Transaction Form</b>
+<p><b>
+This transaction as an entity in this system it stands like a bridge between user and revenue. Transactions serve as the pivotal link between users and revenue in the system, documenting every financial interaction that are fulfilled by the user during payment of revenue.
+ </p>
+ <img src="image/fdhdf.png" width=450 height=300><br>
+
+<b>5.    User Form</b>
+<p><b>
+Under this system administrator will create new system user who can access the system by logging in using email and password that have been given, and they will access system on what function he/she possess like during transaction of revenue. 
+Under this page admin can add or modify the information of the user in in this system so that the functioning of the system will continue. the information entered from this page will go directly to be stored in database table called user.
+ </p>
+ <img src="image/dfbdfh.png" width=450 height=300><br>
+<p><b><u><h1>  LOGOUT </h1></b></u>
+Administrator can securely log out to end their session, ensuring data privacy and system security. Upon logout, the system clears admin credentials, terminates active sessions, and redirects to the login page, maintaining the integrity and confidentiality of government revenue data. </p>
+       <img src="image/logout.png" width=450 height=300>
+
+<p> And then apart from admin login the user of this system have directing for user login and access different user related entities of the system as shown bellows;</p>
+          
+           <p><b><u>3.  USER LOGIN FORM </u></b></br>
+            
+<p><b>
+This the page on which new created user will use given email and password that are recorded in database called in table called admin to login so that he/she can access the system features he/she is allowed to.
+Under this user has own login form so as to access and make the transactions of revenue as follows
+
+ </p>
+ <img src="image/fhgsdagj.png" width=450 height=300><br>
+
+ 
+<p><b>
+The dashboard provides a comprehensive view of revenue and transactions. Users can monitor their transactions of revenues, read revenue from database, and access detailed transaction records.
+ </p>
+ <img src="image/xbsxbx.png" width=450 height=300><br 
+ <b>>   Revenue</b><br>
+<img src="image/dsfsf.png" width=450 height=300><br>
+
+<b>>   Transaction</b><br>
+ <p><b>
+In this system, these transactions would be implemented using appropriate data structures, classes, and database operations to maintain accurate records and ensure the system's smooth functioning for this system it is defined as like the bridge between user who pays revenue and revenue as an entity in this system.
+ </p>
+ <img src="image/dbfdb.png" width=450 height=300><br>
+
+<li><b><h1>II.4. Conclusion</h1></b></li>
+
+                <p><b>Concluding this chapter concerns with java programming especially in my developing this system, several key achievements have been realized and works. Firstly, the implementation of this system has greatly enhanced the efficiency and accuracy of revenue collection and tracking processes, resulting in improved financial transparency and accountability of government revenue management system.</p></br>
+ 
+
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+        </ul>
+		
+	</ol>
+	<marquee><u><i><h2 style="color: white;">Prepared By</i></u>:   <b>Samuel Niyomurengezi</b> </h2></marquee>
+	</body>
+	</html>
